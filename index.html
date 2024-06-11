@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Restaurant menu</title>
+        
+        <!-- link ke css w3 -->
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!-- link font google -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+        
+        
+        <!-- <link rel="stylesheet" href="w3.css"> -->
+        <style>
+            body,html {
+    height: 100%;
+}
+        
+body, h1, h2, h3, h4, h5, h6
+ kalam-light    {
+  font-family: "Kalam", cursive;
+}
+
+
+
+
+        
+menu{
+    display: none;
+}
+        
+.bgimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(gambar/backgroun.jpeg);
+    min-height: 90%;
+}
+
+
+        </style>
+          
+    </head>
+    <body class=w3-center >
+        <!-- Membuat navbar -->
+        <div class="w3-top w3-hide-small">
+            <div class="w3-bar w3-xlarge w3-black w3-oppacity w3-hover-oppacity-off" id="mynavbar">
+                
+                <a href="#" class="w3-bar-item w3-button w3 w3-pale-yellow">HOME</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-pale-yellow">MENU</a>
+                <a href="#about" class="w3-bar-item w3-button w3-pale-yellow">ABOUT</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-pale-yellow">CONTACT</a>
+
+
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+            </div>
+        </div>
+    
+    
+    <!-- Header -->
+    <header class="bgimg w3-display-container w3-grayscale-min">
+
+            <div class="w3-display-bottomleft w3-padding" id="HOME">
+                <span class="w3-tag w3-xlarge">Open from 10 am to 12 pm</span>
+            </div>
+            <div class="w3-display-middle w3-center">
+                <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size: 60px;"><b>Resto<br>Nusantara Resto</b></span>
+                <p> <a href="#menu" class="w3-button w3-xxlarge w3-black">let me see the menu</a></p>
+            </div>
+    </header>
+
+    <!-- Menu container -->
+    
+    <div  class="w3-container w3-black w3-padding-64 w3-xxlarge"id="menu"></div>
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px;">The Menu</b></h1>
+
+       <!-- menu yang ada di container -->
+
+            <div class="w3-row w3-center w3-border w3-black w3-border-dark-grey">
+                <a href="javascirpt:void(0)" onclick="openMenu(event, 'makanan')" id="mylink">
+                    <div class=" w3-col s4 tablink w3-padding-large w3-hover-red w3-round-xlarge">makanan </div>
+                </a>
+                <a href="javascirpt:void(0)" onclick="openMenu(event, 'minuman')">
+                    <div class=" w3-col s4 tablink w3 w3-padding-large w3-hover-red w3-round-xlarge" >minuman</div>
+                </a>
+                <a href="javascirpt:void(0)" onclick="openMenu(event, 'kue')">
+                    <div class=" w3-col s4 tablink w3-hover-red w3-padding-large w3-round-xlarge">
+                        kue
+                    </div>
+                </a>
+            </div> 
+    </div>
+    <div class="w3-row w3-center  w3-black w3-border-dark-grey">
+            <div id="makanan" class="w3-container menu w3-padding-32 w3-white w3-border-dark-grey w3-border">
+                    
+                    <h1><b>Ayam betutu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                    <p class="w3-text-gray">Fresh chicken ,Fresh Vegetables, sauce and sambal</p><hr>
+                
+
+                    <h1><b>Gurame asama manis</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                    <p class="w3-text-gray">Fresh fish ,Fresh Vegetables, sauce and sambal</p><hr>
+                
+
+                    <h1><b>Ayam betutu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                    <p class="w3-text-gray">egg dadar ,Fresh Vegetables, chicken teriyaki</p><hr>
+                
+
+                    <h1><b> Pecel ayam lele</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                    <p class="w3-text-gray">Fresh chicken and lele ,Fresh Vegetables, sauce and sambal</p><hr>
+                
+
+                    <h1><b>Ayam betutu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                    <p class="w3-text-gray">Fresh lobster and krabs ,Fresh Vegetables, sauce and sambal</p><hr>
+                
+
+            </div>
+            <div id="minuman" class="w3-container  menu w3-padding-32 w3-white">
+
+                <h1><b>Es teh manis</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">cold water ,block sugar</p><hr>
+            
+                <h1><b>ES cendol</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">Cendol ,cold water, milk kental manis</p><hr>
+                
+                <h1><b>Es doger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">Block ice ,bakery, milk kental manis</p><hr>
+                
+
+                <h1><b>mocacino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">cold mocacino ,milk kental manis</p><hr>
+                
+
+            </div>
+            <div id="kue" class="w3-container menu w3-padding-32 w3-white">
+
+                <h1><b>Bolu sangkuriang</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">chese mozarela, meses</p><hr>
+                
+
+                <h1><b>Bolu siliwangi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">chese ,milk kental manis, meses </p><hr>
+                
+                <h1><b>Roti crocodile</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RP 50.000</span></h1>
+                <p class="w3-text-gray">chocolate ,chese, meses, maargarin</p><hr>
+                
+
+            </div>
+        </div>
+            <!-- Image of location/map -->
+    <img src="/images/maps.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+    <!-- Contact -->
+   
+    
+    </footer>
+
+            <!-- ABOUT container -->
+
+            <div id="about" class="w3container w3-ed w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge"  >
+                <div>
+                    <h1 style="margin-bottom: 64px;">About</h1>
+                    <p>The Nusantara resto was founded in 1965 by MR.PROF.Maroon in england, consectetur adipiscing elit,sed do elusmod tempor in cididunt ut laborse et dolore magna aliqua. ut menim ad minim veniam, quis nostrudexercitation ullamco laboris nisi ut aliquipex ea commodoconsequat. 
+                    </p>
+
+                    <P><strong>The cheff</strong></P><img src="" style="width: 150px;" alt="cheff"></P>
+                    <p class="w3-padding-16 w3-stretch" >We are proud of ours interior</p>
+                    <img src="gambar/gambar.jpeg" style="width: 100%;" alt="Restaurant" class="w3-margin-top w3-margin-bottom">
+
+                    <h1><B>Opening Hours</B></h1>
+                    <div class="w3-row" >
+                        <div class="w3-half">
+                            <p>Monday 10.00 - 24.00</p>
+                            <p>Tuesday 10.00 - 24.00<
+                            <p>wednesday 10.00 - 24.00</p>
+                            <p>Thursday 10.00 - -24.00</p>
+                        </div>
+                        <div class="w3-half">   
+                            <p>Friday 10.00 - 12.00</p>
+                            <p>Saturday 10.00 - 23.00</p>
+                            <p>Sunday Closed</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- contact -->
+
+      <div id="contact" class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p>Find us at some address at some place or call us at 0895-4180-70501</p>
+            <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
+                understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
+                and taste.</p>
+            <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:
+            </p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                        required name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                        placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+   
+    <!-- footer -->
+<!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+        <p>Powered by <a href="https://www.instagram.com/uu.menk/" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">Umar</a></p>
+    
+</body>
+
+</html>

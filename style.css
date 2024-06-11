@@ -1,0 +1,22 @@
+body,html {
+    height: 100%;
+}
+        
+body, h1, h2, h3, h4, h5, h6{
+    .kalam-light {
+        font-family: "Kalam", cursive;
+       
+      }
+      
+        }
+        
+menu{
+    display: none;
+}
+        
+.bgimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(pp.jpeg);
+    min-height: 90%;
+}
